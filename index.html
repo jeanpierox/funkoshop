@@ -1,87 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FunkoShop | HOME</title>
-</head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <a href="/">
-                        <img src="" alt="Marca Funkoshop">
-                    </a>
-                    <li><a href="./pages/shop.html" target="_blank" rel="noopener noreferrer">SHOP</a></li>
-                    <li><a href="" target="_blank" rel="noopener noreferrer">CONTACTO</a></li>
-                    <li><a href="./pages/login.html" target="_blank" rel="noopener noreferrer">LOGIN</a></li>
-                    <li><a href="./pages/carrito.html" target="_blank" rel="noopener noreferrer">CARRITO</a></li>
-                </ul>
-            </nav>
-        </header>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Funkoshop</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+<!-- Header -->
+    <header class="header">
+      <nav class="navbar">
+        <picture class="navbar_logo">
+          <a href="./index.html"><img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop"/></a>
+        </picture>
+        <ul class="navbar_menu">
+          <li><a class="navbar_menu_icon" href="./pages/shop.html">SHOP<iconify-icon icon="mdi:chevron-down" style="color: white" width="29" height="29"></iconify-icon></a></li>
+          <li><a href="./pages/contact.html">CONTACTO</a></li>
+          <li><a href="./pages/login.html">LOGIN</a></li>
+          <li><a href="./pages/cart.html"><img src="./img/icons/cart-icon.svg" alt="icono de carrito"></a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <!-- Seccion Novedades -->
-        <section>
-            <article>
-                <h3>Nuevos Ingresos</h3>
-                <p>Descubrí el próximo Funko Pop de tu colección</p>
-                <a href="">SHOP</a>
+<!-- Contenido Principal-->
+    <main>
+        <section class="banner">
+            <article class="banner_container">
+                <h3 class="banner_title">Nuevos Ingresos</h3>
+                <p class="banner_text">Descubrí el próximo Funko Pop de tu colección</p>
+                <a class="banner_boton" href="./pages/shop.html">SHOP</a>
             </article>
         </section>
+        <section>
+            <article>
+                <h3>Pokemon</h3>
+                <p>Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
+                <a href="./pages/shop.html">VER COLECCIÓN</a>
+            </article>
+            <picture>
+                <img src="./img/pokemon/vulpix-1.webp" alt="Figura coleccionable de la colección Pokemon"/>    
+            </picture>
+        </section>
+        <section>
+            <article>
+                <h3>Star Wars</h3>
+                <p>Disfruta de una saga que sigue agregando personajes a su colección.</p>
+                <a href="./pages/shop.html">VER COLECCIÓN</a>
+            </article>
+            <picture>
+                <img src="./img/star-wars/baby-yoda-1.webp" alt="Figura coleccionable de la colección Star Wars"/>    
+            </picture>
+        </section>
+        <section>
+            <article>
+                <h3>Harry Potter</h3>
+                <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
+                <a href="./pages/shop.html">VER COLECCIÓN</a>
+            </article>
+            <picture>
+                <img src="./img/harry-potter/snape-patronus-1.webp" alt="Figura coleccionable de la colección Harry Potter"/>    
+            </picture>
+        </section>
+        <section>
+            <article>
+                <h3>Naruto</h3>
+                <p>Una de las historias ánime más famosas ahora también coleccionable.</p>
+                <a href="./pages/shop.html">VER COLECCIÓN</a>
+            </article>
+            <picture>
+                <img src="./img/naruto/nr-cover.png" alt="Figura coleccionable de la colección Naruto"/>    
+            </picture>
+        </section>
+        <section>
+            <h2>ÚLTIMOS LANZAMIENTOS</h2>
+            <ul>
+              <li>
+                <article>
+                  <a href="http://">
+                    <picture><img src="./img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de un Stormtrooper"></picture>
+                    <div>
+                      <p>STAR WARS</p>
+                      <h4>STORMTROOPER LIGHTSABER</h4>
+                      <p>$ 1.799,99</p>
+                      <p>3 CUOTAS SIN INTERES</p>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li>
+                <article>
+                  <a href="http://">
+                    <picture><img src="./img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto"></picture>
+                    <div>
+                      <p>POKEMON</p>
+                      <h4>PIDGEOTTO</h4>
+                      <p>$ 1.799,99</p>
+                      <p>3 CUOTAS SIN INTERES</p>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li>
+                <article>
+                  <a href="http://">
+                    <picture><img src="./img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna Lovegood"></picture>
+                    <div>
+                      <p>HARRY POTTER</p>
+                      <h4>LUNA LOVEGOOD LION MASK</h4>
+                      <p>$ 1.799,99</p>
+                      <p>3 CUOTAS SIN INTERES</p>
+                    </div>
+                  </a>
+                </article>
+              </li>
+            </ul>
+      </section>
+    </main>
 
-        <!-- Contenido Principal-->
-        <main>
-            <section>
-                <article>
-                    <h3>Pokemon</h3>
-                    <p>Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
-                    <a href="">VER COLECCIÓN</a>
-                </article>
-                    <img src="" alt="Imagen Pokemon">
-            </section>
-            <section>
-                <article>
-                    <h3>Star Wars</h3>
-                    <p>Disfruta de una saga que sigue agregando personajes a su colección.</p>
-                    <a href="">VER COLECCIÓN</a>
-                </article>
-                    <img src="" alt="Imagen Star Wars">
-            </section>
-                    <section>
-                <article>
-                    <h3>Harry Potter</h3>
-                    <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
-                    <a href="">VER COLECCIÓN</a>
-                </article>
-                    <img src="" alt="Imagen Harry Potter">
-            </section>
-                    <section>
-                <article>
-                    <h3>Naruto</h3>
-                    <p>Una de las historias ánime más famosas ahora también coleccionable.</p>
-                    <a href="">VER COLECCIÓN</a>
-                </article>
-                    <img src="" alt="Imagen Naruto">
-            </section>
-            <section>
-                <h2>ÚLTIMOS LANZAMIENTOS</h2>
-                <div>
-                    
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <nav>
-                <ul>
-                    <li><a href="">SHOP</a></li>
-                    <li><a href="">REGISTRARSE</a></li>
-                    <li><a href="">LOGIN</a></li>
-                    <li><a href="">CONTACTO</a></li>
-                </ul>
-                <img src="" alt="Marca Funkoshop">
-            </nav>
-            <p>All rights reserved 2023 - Funkoshop ©</p>
-        </footer>
-    </body>
+<!-- Contenido Principal-->
+    <footer>
+      <section>
+        <nav>
+          <ul>
+            <li><a href="./pages/shop.html">SHOP</a></li>
+            <li><a href="./pages/register.html">REGISTRARSE</a></li>
+            <li><a href="./pages/login.html">LOGIN</a></li>
+            <li><a href="./pages/contact.html">CONTACTO</a></li>
+          </ul>
+          <img src="./img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop" />
+        </nav>
+      </section>
+      <p>All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </body>
 </html>

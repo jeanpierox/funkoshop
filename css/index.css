@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    max-width: 1440px;
+    max-height: 144px;
+    display: block;
+    padding: 2.6rem;
+    background-color: #30343F;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23.48px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.navbar_logo{
+    max-width: 370px;
+}
+
+.navbar_menu{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar_menu_icon{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.banner{
+    background-image: url("../img/funkos-banner.webp");
+}

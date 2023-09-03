@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway&display=swap');
+/* ::before
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer{
+    font-family: 'Raleway', sans-serif;
+    color: #FFFFFF;
+}
+
+p{
+    font-size: 1.8em;
+} */
 
 *{
     margin: 0;
@@ -6,39 +20,48 @@
     box-sizing: border-box;
 }
 
-header{
-    max-width: 1440px;
-    max-height: 144px;
-    display: block;
-    padding: 2.6rem;
-    background-color: #30343F;
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23.48px;
+html{
+    font-family: 'Inter', sans-serif;
+    font-size: 62.5%;
+    color: #1F1F1F;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 a{
     text-decoration: none;
     font-family: inherit;
     color: inherit;
 }
-ul{
+
+ul, ol{
     list-style-type: none;
 }
-li{
-    display: list-item;
-    text-align: -webkit-match-parent;
+
+img{
+    width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0;
+}
+
+/* HEADER */
+header{
+    padding: 3.6rem;
+    background-color: #30343f;
+    font-family: 'Raleway', sans-serif;
+    color: #FFFFFF;
+}
+
+.navbar{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar_logo{
-    max-width: 370px;
+  max-width: 300px;  
 }
 
 .navbar_menu{
@@ -47,12 +70,42 @@ li{
     gap: 2rem;
 }
 
-.navbar_menu_icon{
+.navbar_link{
+    font-size: 1.8em;
+    padding: 0.8rem 1.6rem;
+    display: inline-block;
+    transition: ease-in-out .3s background;
+    position: relative;
+}
+
+.navbar_link:hover{
+background-color: rgba(255, 51, 51, 0.9);
+}
+
+.with-icon{
     display: flex;
     align-items: center;
     gap: 0.8rem;
 }
 
-.banner{
-    background-image: url("../img/funkos-banner.webp");
+.with-submenu:hover .submenu{
+    display: block;
+}
+
+.submenu{
+    display: none;
+    width: 150px;
+    position: absolute;
+    background-color: #30343f;
+}
+
+.submenu_link{
+    display: block;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.8em;
+    transition: ease-in-out .3s background;
+}
+
+.submenu_link:hover{
+    background-color: rgba(255, 51, 51, 0.9);
 }
